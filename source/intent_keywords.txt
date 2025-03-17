@@ -1,0 +1,15 @@
+Location
+address, area, base, center, city, country, destination, district, headquarter, hub, landmark, locality, location, municipality, neighborhood, office, place, province, region, site, state, territory, town, village, zone
+
+Business Model
+SaaS, busine, cash, business, money, commerce, commission, corporation, distribution, earning, enterprise, entrepreneurship, finance, fintech, firm, framework, funding, income, industry, investment, licensing, monetization, monetize, operation, organization, profit, retail, revenue, sale, subscription, trade, wholesale
+
+Investments
+IPO, investment, acquisition, angel, asset, bond, capital, crowdfunding, dividend, equity, fund, invest, liquidity, market, merger, portfolio, share, stake, stock, trading, valuation, venture
+
+Timeframe
+time, timeframe, economic, event, forecast, global, headline, insight, latest, media, new, recent, trend, update
+
+Customers
+adopter, audience, buyer, client, customer, demographic, fanbase, investor, member, partner, prospect, purchaser, shopper, stakeholder, subscriber, user, vendor, visitor
+
