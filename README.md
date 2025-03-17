@@ -82,3 +82,62 @@ The system accepts natural language queries about companies and provides structu
 ## Contributors
 
 Can Altin
+
+## Docker Setup
+
+1. Make sure Docker and Docker Compose are installed on your system.
+
+2. Build the Docker image:
+```bash
+docker-compose build
+```
+
+3. Start the application:
+```bash
+docker-compose up
+```
+
+4. To stop the application:
+```bash
+docker-compose down
+```
+
+- Rebuild the image (after dependency changes):
+```bash
+docker-compose build --no-cache
+```
+
+- Clean up Docker resources:
+```bash
+docker system prune -f
+```
+
+2. Open your browser and navigate to:
+```
+http://localhost:8000
+```
+
+## API Endpoints
+
+- `GET /`: Home page
+- `POST /start_conversation`: Start a new conversation
+- `GET /getResponse`: Get response from the AI
+
+## Docker Configuration
+
+The project includes the following Docker-related files:
+
+- `Dockerfile`: Defines the container image
+- `docker-compose.yml`: Orchestrates the application
+- `.dockerignore`: Excludes unnecessary files from the build
+
+### Environment Variables
+
+The following environment variables are required:
+
+- `OPENAI_API_KEY`: Your OpenAI API key
+- `TAVILY_API_KEY`: Your Tavily API key
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.

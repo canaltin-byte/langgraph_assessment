@@ -15,7 +15,6 @@ langchain-openai==0.3.8
 fastapi==0.104.1
 uvicorn==0.24.0
 python-multipart==0.0.6
-en-core-web-trf==3.8.0
 torch>=2.6.0
 spacy-curated-transformers>=0.3.0
 curated-transformers>=0.1.1

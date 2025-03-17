@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  web:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./api.py:/langgraph_assessment/api.py
+      - ./main.py:/langgraph_assessment/main.py
+      - ./data_retrieval.py:/langgraph_assessment/data_retrieval.py
+      - ./evaluation.py:/langgraph_assessment/evaluation.py
+      - ./text_analyze.py:/langgraph_assessment/text_analyze.py
+      - ./utils.py:/langgraph_assessment/utils.py
+      - ./templates:/langgraph_assessment/templates
+      - ./source:/langgraph_assessment/source
+    env_file:
+      - .env
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - TAVILY_API_KEY=${TAVILY_API_KEY}
+      - PYTHONDONTWRITEBYTECODE=1
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped 
